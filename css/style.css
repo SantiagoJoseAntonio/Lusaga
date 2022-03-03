@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+    background: url(/images/fondo.PNG);
+}
+
+.header {
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    background: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    background: none;
+}
+
+.nav-link {
+    color: #4a2c1f;
+    text-decoration: none;
+    font-family: cursive;
+    border-radius: 5px;
+}
+
+.logo {
+    margin-top: 10px;
+    width: 150px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    margin-top: 20px;
+    line-height: 40px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 0px 12px;
+    /* border-radius: 3px; */
+    font-weight: bolder;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    /* background: url(/images/menu_bg.png); */
+    background: #4a2c1f;
+    color: white;
+    transition: 0.2s;
+}
+
+.nav-toggle {
+    color: rgb(102, 62, 62);
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 80px;
+    display: none;
+    cursor: pointer;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+    .header1 {
+        height: 60px;
+    }
+    .logo {
+        margin-top: 5px;
+        width: 80px;
+        margin-left: 20px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: rgb(90, 176, 197);
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 0 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3ms;
+    }
+    .nav-menu-item {
+        line-height: 60px;
+    }
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: rgb(102, 62, 62);
+    }
+    .nav-toggle {
+        line-height: 60px;
+        display: block;
+    }
+    .nav-menu_visible {
+        left: 0;
+    }
+}
+
+.titulo {
+    margin-top: -10px;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 20px;
+    color: brown;
+}
+
+.titulo2 {
+    margin-top: -10px;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 15px;
+    color: brown;
+}
+
+.subtitulo {
+    margin: 0;
+    color: #000;
+    display: inline;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sabor {
+    color: #fff;
+    margin: 7px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0;
+}
+
+.linea-division {
+    width: 80%;
+    height: 2px;
+    background-color: #36221c;
+}
+
+
+/* ------------------------- */
+
+
+/* Estilos de Materialize */
+
+
+/* ------------------------- */
+
+.carousel {
+    min-height: 500px;
+}
+
+.carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 500px;
+    height: 500px;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.carousel .indicators .indicator-item {
+    border-radius: 0;
+    transform: rotate(45deg);
+    margin: 0 15px;
+    background: #36221c;
+}
