@@ -173,7 +173,9 @@ body {
 /* ------------------------- */
 
 .carousel {
-    min-height: 500px;
+    display: list-item;
+    margin-top: 40PX;
+    min-height: 450px;
 }
 
 .carousel .carousel-item {
@@ -200,6 +202,6 @@ body {
 .carousel .indicators .indicator-item {
     border-radius: 0;
     transform: rotate(45deg);
-    margin: 0 15px;
+    margin: 0 5px;
     background: #36221c;
 }
