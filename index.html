@@ -8,26 +8,37 @@
     <title>Lusaga</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./css/style.css">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://kit.fontawesome.com/fc4fe12eea.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/fc4fe12eea.js" crossorigin="anonymous"></script> -->
     <script defer src="./js/index.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="nav">
-            <a href="#"><img src="/images/Logo.png" alt="" class="logo"></a>
-            <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
-            <ul class="nav-menu">
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link nav-menu-link_active">Blog</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Videos</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Sobre mi</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Contactos</a></li>
-            </ul>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="sass.html" class="brand-logo left"><img src="images/logo2.png" class="logo" alt=""></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger brand-logo right"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html" class="link-item">Sass</a></li>
+                    <li><a href="badges.html" class="link-item">Components</a></li>
+                    <li><a href="collapsible.html" class="link-item">Javascript</a></li>
+                    <li><a href="mobile.html" class="link-item">Mobile</a></li>
+                </ul>
+            </div>
         </nav>
-    </header>
+    </div>
+
+    <ul class="sidenav desliz" id="mobile-demo">
+        <li><a href="sass.html" class="link-item">Sass</a></li>
+        <li><a href="badges.html" class="link-item">Components</a></li>
+        <li><a href="collapsible.html" class="link-item">Javascript</a></li>
+        <li><a href="mobile.html" class="link-item">Mobile</a></li>
+    </ul>
+
+
 
     <div class="container">
         <div class="row">
@@ -79,30 +90,126 @@
                 </div>
             </div>
         </div>
-        <div class="col s12">
-            <h1 class="titulo center-align">¿Que cafés ofrece lusaga?.</h1>
+    </div>
+
+    <!-- AQUI EMPIEZA LAS TARJETAS DE LA PAGINA -->
+
+    <div class="col s12">
+        <h1 class="titulo center-align">¿Que cafés ofrece lusaga?.</h1>
+    </div>
+
+    <div class="row">
+        <!-- PRIMERA TARJETA -->
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/espresso.jpg">
+                    <span class="card-title">Espresso</span>
+                </div>
+                <div class="card-content">
+                    <p>Es considerado como la bebida básica para todas las bebidas a base de café. Café hecho en el momento. Con presion y espresamente para ti. Es una bebida corta, de 1 onza (20 a 30 militros) , en ella se puede obtener todas las propiedades
+                        del café, se obtiene a traves de la presion del agua caliente</p>
+                </div>
+                <!-- <div class="card-action ">
+                        <a href="# ">This is a link</a>
+                    </div> -->
+            </div>
+        </div>
+        <!-- SEGUNDA TARJETA  -->
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/americano.jpg ">
+                    <span class="card-title">Americano</span>
+                </div>
+                <div class="card-content">
+                    <p>El café americano, es diferente al café de olla, café de cafetera, o café negro obtenido de otra forma de extracción. El café americano esta hecho a base de espresso rebajado con agua.
+                    </p>
+                </div>
+                <!-- <div class="card-action ">
+                        <a href="# ">This is a link</a>
+                    </div> -->
+            </div>
         </div>
 
-        <div class="row">
-            <div class="col s6 m6 l3 contenido">
-                <div>
-                    <p>s12 m6 l3</p>
+        <!-- TERCERA TARJETA  -->
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/capuccino.jpg">
+                    <span class="card-title ">Capuccino</span>
                 </div>
-                <img src="images/americano.jpg" width="150" alt="">
+                <div class="card-content">
+                    <p>El nombre proviene del color del habito de los frailes capuchinos, refiriéndose al color marrón de sus hábitos, que tienen el mismo color de un café con leche </p>
+                </div>
+                <!-- <div class="card-action ">
+                        <a href="# ">This is a link</a>
+                    </div> -->
+            </div>
+        </div>
 
-            </div>
-            <div class="col s12 m6 l3 contenido" ">
-                <p>s12 m6 l3</p>
-            </div>
-            <div class="col s12 m6 l3 contenido "">
-                <p>s12 m6 l3</p>
-            </div>
-            <div class="col s12 m6 l3 contenido" ">
-                <p>s12 m6 l3</p>
+        <!-- CUARTA TARJETA -->
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/latte.jpg">
+                    <span class="card-title">Latte</span>
+                </div>
+                <div class="card-content">
+                    <p>El café latte es una bebida que se realiza con leche, se texturiza la leche lo suficiente, cuidando que no se produzca mucha espuma. Esta bebida es muy cremosa y se puede apreciar la combinación perfecta de café con leche muy cremosa.</p>
+                </div>
+                <!-- <div class="card-action ">
+                        <a href="# ">This is a link</a>
+                    </div> -->
             </div>
         </div>
     </div>
 
+    <!-- SEGUNDA CAJA DE TARJETAS -->
+
+    <div class="row">
+        <!-- PRIMERA TARJETA -->
+        <div class="col s3 ofsset-s4"></div>
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/moka.jpg">
+                    <span class="card-title ">Moka</span>
+                </div>
+                <div class="card-content">
+                    <p>El Café Moca es una variación del Capuchino, pero está hecho con espresso, leche vaporizada y chocolate.</p>
+                </div>
+                <!-- <div class="card-action ">
+                        <a href="# ">This is a link</a>
+                    </div> -->
+            </div>
+        </div>
+        <!-- SEGUNDA TARJETA  -->
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/caramel.jpg">
+                    <span class="card-title">Caramel Macchiato</span>
+                </div>
+                <div class="card-content">
+                    <p>El nombre “Macchiato” en italiano significa “marcado”, es decir, se “marca” el café espresso con leche vaporizada y con caramelo.</p>
+                </div>
+                <!-- <div class="card-action ">
+                        <a href="# ">This is a link</a>
+                    </div> -->
+            </div>
+        </div>
+
+        <!-- AQUI EMPIEZA EL MENU -->
+        <div class="col s12 menu">
+            <h1 class="titulo center-align">MENÚ</h1>
+        </div>
+
+        <div>
+            <div class="col s12 m6">
+                <h1>hola</h1>
+            </div>
+        </div>
 
 </body>
 

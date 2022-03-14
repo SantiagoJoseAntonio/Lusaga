@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    M.AutoInit();
     const elementosCarousel = document.querySelectorAll('.carousel');
     M.Carousel.init(elementosCarousel, {
         duration: 150,
@@ -9,11 +10,4 @@ document.addEventListener('DOMContentLoaded', () => {
         indicators: true,
         noWrap: false
     });
-});
-
-const navToggle = document.querySelector(".nav-toggle")
-const navMenu = document.querySelector(".nav-menu")
-
-navToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("nav-menu_visible")
 });
