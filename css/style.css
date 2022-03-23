@@ -96,8 +96,9 @@ nav {
 
 .menu {
     background: #373c41;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: -20PX;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .card-image1 {
@@ -155,6 +156,7 @@ nav {
     text-align: justify;
     position: relative;
     color: #fff;
+    font-size: 15PX;
 }
 
 .menu-sub {
@@ -189,6 +191,15 @@ nav {
 .ultimo {
     /* width: 100%; */
     margin-right: 200px;
+}
+
+.titulo-menu2 {
+    position: absolute;
+    top: 5px;
+    /* left: 65px; */
+    font-size: 12px;
+    /* align-self: center; */
+    color: #fff;
 }
 
 
